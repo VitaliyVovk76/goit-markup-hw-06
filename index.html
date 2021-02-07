@@ -60,12 +60,12 @@
     <main>
         <!-- Герой -->
         <section class="hero overlay">
-            
+
             <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
             <button class="button primary" type="button" data-modal-open>Заказать услугу</button>
         </section>
 
-        
+
 
         <!--Выгоды от сотрудничества  -->
         <section class="feature section-padding">
@@ -428,14 +428,64 @@
 
         </div>
     </footer>
-
-    <div class="hero-backdrop is-hidden" data-modal>
-        <form class="hero-modal-window">
-            <button class="hero-modal-btn" type="button" data-modal-close>
-                <svg class="modal-btn-img" width='11' height='11'>
+    <!-- убрал is-hidden -->
+    <div class="hero-backdrop " data-modal>
+        <form class="hero-form-window">
+            <button class="hero-form-btn-close" type="button" data-modal-close>
+                <svg class="hero-form-btn-img" width='11' height='11'>
                     <use href="./images/sprite-1.svg#icon-close"></use>
                 </svg>
             </button>
+            <b class="hero-form-title">Оставьте свои данные, мы вам перезвоним</b>
+            
+                <label class="hero-form-field">
+                    <span class="hero-form-label">Имя</span>
+                    <div class="hero-form-input-area">
+                        <input class="hero-form-input" type="text" name="name" autofocus placeholder=" ">
+                        <span class="hero-form-field-img">
+                            <svg width='12' height='12'>
+                                <use href='./images/sprite-1.svg#icon-person-modal'></use>
+                            </svg>
+                        </span>
+                        <div class="input-cover"></div>
+                    </div>
+                </label>
+            
+                <label class="hero-form-field">
+                    <span class="hero-form-label">Телефон</span>
+                    <div class="hero-form-input-area">
+                        <input class="hero-form-input" type="tel" name="tel" placeholder=" ">
+                        <span class="hero-form-field-img">
+                            <svg width='12' height='12'>
+                                <use href='./images/sprite-1.svg#icon-phone-modal'></use>
+                            </svg>
+                        </span>
+                    </div>
+                </label>
+
+                <label class="hero-form-field">
+                    <span class="hero-form-label">Почта</span>
+                    <div class="hero-form-input-area">
+                        <input class="hero-form-input" type="email" name="email" placeholder=" ">
+                        <span class="hero-form-field-img">
+                            <svg width='12' height='12'>
+                                <use href='./images/sprite-1.svg#icon-email-modal'></use>
+                            </svg>
+                        </span>
+                    </div>
+
+                </label>
+            
+
+            <label class="hero-form-field-comment">
+                <span class="hero-form-label">Комментарий</span>
+                <textarea class="hero-form-input comment" name="comment" id="comment"  placeholder="Введите текст"></textarea>
+            </label>
+
+            <label class="hero-form-field">
+
+            </label>
+
         </form>
     </div>
 
