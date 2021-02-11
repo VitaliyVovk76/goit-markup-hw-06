@@ -922,13 +922,15 @@ textarea {
 .hero-form-checkbox-castom {
   display: inline-flex;
   margin-left: 12px;
-  width: 26px;
+  width: 16px;
   height: 25px;
   border: 1px solid var(--title-color);
   margin-right: 8px;
   background-origin: border-box;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ПЕРВЫЙ ВАРИАНТ */
 
 /* .hero-form-checkbox:checked + .hero-form-checkbox-castom {
   border: var(--accent-color);
@@ -943,6 +945,8 @@ textarea {
   background-size: contain;
   background-repeat: no-repeat;
 } */
+
+/* ВТОРОЙ ВАРИАНТ */
 
 .hero-form-checkbox:checked + .hero-form-checkbox-castom::before {
   content: "";
@@ -960,6 +964,8 @@ textarea {
 .hero-form-checkbox:hover + .hero-form-checkbox-castom {
   border-color: var(--accent-color);
 }
+
+.hero-form-field-checkbox::before{}
 
 
 .hero-form-checkbox-accept {
