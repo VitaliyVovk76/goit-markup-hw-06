@@ -922,15 +922,15 @@ textarea {
 .hero-form-checkbox-castom {
   display: inline-flex;
   margin-left: 12px;
-  width: 16px;
-  height: 15px;
+  width: 26px;
+  height: 25px;
   border: 1px solid var(--title-color);
   margin-right: 8px;
   background-origin: border-box;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-form-checkbox:checked + .hero-form-checkbox-castom {
+/* .hero-form-checkbox:checked + .hero-form-checkbox-castom {
   border: var(--accent-color);
   background-color: var(--accent-color);
 }
@@ -942,9 +942,9 @@ textarea {
   background-image: url("../images/svg-otpimize/icon-check.svg");
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
-/* .hero-form-checkbox:checked + .hero-form-checkbox-castom::before {
+.hero-form-checkbox:checked + .hero-form-checkbox-castom::before {
   content: "";
   display: block;
   width: 100%;
@@ -954,7 +954,7 @@ textarea {
   background-image: url("../images/svg-otpimize/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
-} */
+}
 
 .hero-form-checkbox:focus + .hero-form-checkbox-castom,
 .hero-form-checkbox:hover + .hero-form-checkbox-castom {
